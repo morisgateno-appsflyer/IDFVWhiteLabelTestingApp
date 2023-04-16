@@ -24,7 +24,7 @@ To implement the white label app, follow these steps:
 6. Rebuild and re-install the app on the device.
 Once the app is installed with the new Bundle Identifier, it will have a new IDFV associated with it/ if you have already other apps you developed the new white label app will get the same IDFV as the others. Now by keeping this app, you ensure consistent testing across multiple versions of the app.
 
-![Screenshot](how to change bundleID.png.png)
+![Screenshot](HowToChangeBundleID.png)
 
 
 ### This app is provided free of charge, solely for the benefit of the client.
