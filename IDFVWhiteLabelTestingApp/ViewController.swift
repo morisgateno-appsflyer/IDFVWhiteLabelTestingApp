@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
 
@@ -15,11 +16,21 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var idfvView: UIView!
+    @IBOutlet weak var linkButton: UIButton!
     @IBOutlet weak var IDFVLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor=UIColor(red: 229/255, green: 229/255, blue: 229/255, alpha: 1.0)
+        
+        idfvView.layer.masksToBounds = true
+        idfvView.layer.cornerRadius = 7.0
+        
         displayIDFV()
+        
+        linkButton.tintColor = UIColor(red: 59/255, green: 67/255, blue: 77/255, alpha: 1)
+        linkButton.layer.masksToBounds = true
+        linkButton.layer.cornerRadius = 15.0
     }
     func displayIDFV(){
         self.IDFVLabel.text = UIDevice.current.identifierForVendor?.uuidString ?? "No IDFV"
